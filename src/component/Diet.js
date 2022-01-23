@@ -22,7 +22,7 @@ export default function Diet({ token, admin }) {
 
   useEffect(async () => {
     console.log("saleeh");
-    const result = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/Diet,`, {
+    const result = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/Diet`, {
       headers: { authorization: "Bearer " + token },
     });
 
