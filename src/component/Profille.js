@@ -9,7 +9,7 @@ export default function Profille({token}) {
  const [img, setImg] = useState("");  
 
  useEffect( async () => {
-   const respones = await axios.get("http://localhost:5000/user", {
+   const respones = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/user`, {
      headers: {authorization: "Bearer " + token}
    });
 
@@ -19,14 +19,14 @@ export default function Profille({token}) {
 // ^ حطينا اليوزر عشان تتحدث الصورة اللي يدخلها اليوزر بدون ما اسوي ريفريش
 
  const updetUser = ()=>{
-   const result = axios.put("http://localhost:5000/updetUser",{
+   const result = axios.put(`${process.env.REACT_APP_BACKEND_URL}/updetUser`,{
      name },
      {headers: {authorization: "Bearer " + token}});
 
      setName(result.data);
  }
  const updetImg = ()=>{
-  const result = axios.put("http://localhost:5000/updetUser",{
+  const result = axios.put(`${process.env.REACT_APP_BACKEND_URL}/updetUser`,{
      img },
     {headers: {authorization: "Bearer " + token}});
 

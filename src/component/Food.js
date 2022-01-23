@@ -17,14 +17,14 @@ console.log(useParams());
 useEffect( async () => {
     console.log(token,"token");
     console.log(id ,id);
-  const res = await axios.get(`http://localhost:5000/get-food/${id}`,{
+  const res = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/get-food/${id}`,{
       headers: {authorization: "Bearer " + token}
   });
   setFoodDiab(res.data);
   console.log(res.data);
 
   
-    const result = await axios.get("http://localhost:5000/user", {
+    const result = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/user`, {
       headers: {authorization: "Bearer " + token}
     });
  
@@ -34,7 +34,7 @@ useEffect( async () => {
 
 
 const postCommen = async ()=>{
-    const result = await axios.post(`http://localhost:5000/commentFodDibe/${id}`,
+    const result = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/commentFodDibe/${id}`,
     { comment: comment }, { headers: {authorization: "Bearer " + token}
 });
 
@@ -49,7 +49,7 @@ const inpComent = (e)=>{
 
 const deletCommentFod = async (comment)=>{
   console.log(token, id);
-  const resu = await axios.put(`http://localhost:5000/commentFodDibe/${id}`, 
+  const resu = await axios.put(`${process.env.REACT_APP_BACKEND_URL}/commentFodDibe/${id}`, 
   {comment: comment}, {headers: {authorization: "Bearer " + token}},
   );
   console.log(resu)

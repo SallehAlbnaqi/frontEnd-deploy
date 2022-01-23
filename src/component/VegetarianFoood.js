@@ -13,13 +13,13 @@ export default function VegetarianFoood({ token, admin }) {
   const history = useHistory();
 
   useEffect(async () => {
-    const response = await axios.get("http://localhost:5000/veget", {
+    const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/veget`, {
       headers: { authorization: "Bearer " + token },
     });
     setVeget(response.data);
 
     if (token) {
-      const response = await axios.get("http://localhost:5000/user", {
+      const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/user`, {
         headers: { authorization: "Bearer " + token },
       });
       setuser(response.data);
@@ -49,7 +49,7 @@ export default function VegetarianFoood({ token, admin }) {
 
   const addVeget = async () => {
     const response = await axios.post(
-      "http://localhost:5000/veget",
+      `${process.env.REACT_APP_BACKEND_URL}/veget`,
       {
         newName: name,
         newDescription: description,
@@ -66,7 +66,7 @@ export default function VegetarianFoood({ token, admin }) {
   };
 
   const deleVeget = async (id, index) => {
-    const delet = await axios.delete(`http://localhost:5000/veget/${id}`, {
+    const delet = await axios.delete(`${process.env.REACT_APP_BACKEND_URL}/veget/${id}`, {
       headers: { authorization: "Bearer " + token },
     });
 

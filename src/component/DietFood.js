@@ -12,13 +12,13 @@ export default function DietFood({ token }) {
   const history = useHistory();
 
   useEffect(async () => {
-    const response = await axios.get(`http://localhost:5000/getDiet/${id}`, {
+    const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/getDiet/${id}`, {
       headers: { authorization: "Bearer " + token },
     });
 
     setDiet(response.data);
     console.log(response.data, "data");
-    const result = await axios.get("http://localhost:5000/user", {
+    const result = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/user`, {
       headers: {authorization: "Bearer " + token}
     });
  
@@ -30,7 +30,7 @@ export default function DietFood({ token }) {
   };
 
   const postComment = async () => {
-    const res = await axios.post(`http://localhost:5000/AddComment/${id}`,
+    const res = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/AddComment/${id}`,
       { comment: comment }, { headers: { authorization: "Bearer " + token } }
     );
     setDiet({ ...Diet, comment: res.data.comment });
@@ -43,7 +43,7 @@ export default function DietFood({ token }) {
 
 
   const deletComDiet = async (comment)=>{
-     const result = await axios.put(`http://localhost:5000/Comment/${id}`,
+     const result = await axios.put(`${process.env.REACT_APP_BACKEND_URL}/Comment/${id}`,
      {comment: comment}, {headers: {authorization: "Bearer " + token}},
      
      );

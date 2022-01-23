@@ -12,7 +12,7 @@ export default function Navbar({ token, setToken,admin }) {
   const [user, setuser] = useState([]);
   useEffect( async() => {
     if (token) {
-      const response = await axios.get("http://localhost:5000/user", {
+      const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/user`, {
         headers: { authorization: "Bearer " + token },
       });
       setuser(response.data);

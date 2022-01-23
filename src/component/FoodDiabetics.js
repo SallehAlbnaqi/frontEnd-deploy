@@ -12,12 +12,12 @@ export default function FoodDiabetics({ token, admin }) {
   const history = useHistory();
 
   useEffect(async () => {
-    const response = await axios.get("http://localhost:5000/FoDiab", {
+    const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/FoDiab`, {
       headers: { authorization: "Bearer " + token },
     });
     setFoodDiab(response.data);
     if (token) {
-      const response = await axios.get("http://localhost:5000/user", {
+      const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/user`, {
         headers: { authorization: "Bearer " + token },
       });
       setuser(response.data);
@@ -47,7 +47,7 @@ export default function FoodDiabetics({ token, admin }) {
 
   const AddDiad = async () => {
     const response = await axios.post(
-      "http://localhost:5000/FoDiab",
+      `${process.env.REACT_APP_BACKEND_URL}/FoDiab`,
       {
         newName: name,
         newDescription: description,
@@ -64,7 +64,7 @@ export default function FoodDiabetics({ token, admin }) {
   };
 
   const delDiad = async (id, index) => {
-    const deletDi = await axios.delete(`http://localhost:5000/FoDiab/${id}`, {
+    const deletDi = await axios.delete(`${process.env.REACT_APP_BACKEND_URL}/FoDiab/${id}`, {
       headers: { authorization: "Bearer " + token },
     });
     const copyAr = [...FoodDiab];

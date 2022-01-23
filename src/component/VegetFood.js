@@ -11,14 +11,14 @@ export default function VegetFood({ token }) {
   const history = useHistory();
 
   useEffect(async () => {
-    const response = await axios.get(`http://localhost:5000/vegetFood/${id}`, {
+    const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/vegetFood/${id}`, {
      headers: { authorization: "Bearer " + token },
 
     });
 
     setVeget(response.data);
     console.log(response.data);
-    const result = await axios.get("http://localhost:5000/user", {
+    const result = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/user`, {
       headers: {authorization: "Bearer " + token}
     });
  
@@ -34,7 +34,7 @@ export default function VegetFood({ token }) {
 
 
   const postCommentVeg = async ()=>{
-    const resp = await axios.post(`http://localhost:5000/commentVeget/${id}`, 
+    const resp = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/commentVeget/${id}`, 
       {comment: comment}, {headers: { authorization: "Bearer " + token}},
       // console.log(resp)
     )
@@ -49,7 +49,7 @@ export default function VegetFood({ token }) {
 
 const deletCommentVeg = async (comment)=>{
   console.log(token , id);
- const ress = await axios.put(`http://localhost:5000/commentVegDel/${id}`, 
+ const ress = await axios.put(`${process.env.REACT_APP_BACKEND_URL}/commentVegDel/${id}`, 
  {comment: comment}, {headers: {authorization: "Bearer " + token}},
  );
  console.log(ress)

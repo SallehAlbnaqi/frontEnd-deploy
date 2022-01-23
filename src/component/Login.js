@@ -18,13 +18,13 @@ export default function Login({ setToken, setadmin, token }) {
     setPassword(e.target.value);
   };
   const login = async () => {
-    const result = await axios.post("http://localhost:5000/login", {
+    const result = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/login`, {
       email,
       password,
     });
 
     if (token) {
-      const response = await axios.get("http://localhost:5000/user", {
+      const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/user`, {
         headers: { authorization: "Bearer " + token },
       });
       setuser(response.data);

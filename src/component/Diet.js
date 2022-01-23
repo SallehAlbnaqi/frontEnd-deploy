@@ -22,14 +22,14 @@ export default function Diet({ token, admin }) {
 
   useEffect(async () => {
     console.log("saleeh");
-    const result = await axios.get("http://localhost:5000/Diet", {
+    const result = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/Diet,`, {
       headers: { authorization: "Bearer " + token },
     });
 
     setDiet(result.data);
     console.log(result.data);
     if (token) {
-      const response = await axios.get("http://localhost:5000/user", {
+      const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/user`, {
         headers: { authorization: "Bearer " + token },
       });
       setuser(response.data);
@@ -58,7 +58,7 @@ export default function Diet({ token, admin }) {
 
   const addDiet = async () => {
     const response = await axios.post(
-      "http://localhost:5000/Diet",
+      `${process.env.REACT_APP_BACKEND_URL}/Diet`,
       {
         newName: name,
         newDescription: description,
@@ -75,7 +75,7 @@ export default function Diet({ token, admin }) {
   };
 
   const delDiet = async (id, index) => {
-    const delet = await axios.delete(`http://localhost:5000/Diet/${id}`, {
+    const delet = await axios.delete(`${process.env.REACT_APP_BACKEND_URL}/Diet/${id}`, {
       headers: { authorization: "Bearer " + token },
     });
 
