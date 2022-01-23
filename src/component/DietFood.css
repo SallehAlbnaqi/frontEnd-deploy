@@ -1,0 +1,32 @@
+.DietFoood {
+ 
+  padding: 100px;
+    text-align: center;
+}
+
+
+.NameDietFood{
+
+    font-size: 30px;
+    margin: 20px;
+    padding: 2px;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    
+    
+  }
+
+  .NameDiet{
+    text-align: center;
+    font: large;
+    padding: 29px;
+  }
+
+  .imgDiett {
+
+      text-align: center;
+      padding: 50px;
+
+  }
+  

@@ -1,0 +1,320 @@
+ body {
+   background-image: url("https://images.unsplash.com/photo-1517856497829-3047e3fffae1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80");
+   background-repeat: no-repeat;
+   background-size:cover;
+/* https://foodtrotter.com/wp-content/uploads/2020/04/cook-2364221_1280.jpg */
+    
+ }
+
+
+.liToken {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(218, 198, 198);
+
+
+
+  }
+  
+  ul {
+    background-color: #b9b1a4;
+  }
+  .link {
+    
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+  } 
+  
+
+   li a {
+
+    display: block;
+    color: #7a712e			;
+    font-weight: bold;
+    padding: 14px 16px;
+    text-decoration: none;
+    /* background-color: rgb(12, 10, 10); */
+  }
+
+  li a:hover {
+
+  /* background-color: rgb(12, 10, 10); */
+ color: #af805a;
+  
+  }
+
+
+
+   
+  /* Change the link color to #111 (black) on hover */ 
+  /* li a:hover {
+
+    background-color: #111;
+  } */
+
+
+  .logSig{
+
+      padding: 250px;
+      list-style-type: none;
+       margin: 0px;
+    
+    overflow: auto;
+    background-color:rgb(163, 146, 146); 
+
+  }
+
+  .logute {
+
+    float: right;
+    margin: 10px;
+    color: rgb(253, 250, 253);
+  }
+
+  .InputLog{
+  
+    width: 100px;
+    padding: 350px;
+    box-sizing: border-box;
+    font-size: 20px;
+    padding-left: 300px;
+    border-bottom:20px solid #e0d2d2; 
+    margin-top: 2px;
+    
+
+    
+ };
+ 
+    
+     
+  
+/* 
+  .name {
+
+    margin-top: 20px;
+
+  }
+
+  .email {
+
+    margin-top: 20px;
+
+  }
+
+  .pass {
+
+    margin-top: 20px;
+
+  } */
+
+
+  .Box{
+
+    display: grid;
+    grid-template-columns:repeat(3,auto);
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    justify-content: space-between;
+  }
+
+
+ /* .img{
+
+  width: 100px;
+  height: 150px;
+  
+ } */
+
+ .submit{
+
+  width: 100px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 15px;
+  padding: 5px;
+  height: 40px;
+  margin: 10px;
+    justify-content: center ;
+
+ }
+
+
+
+ .img{
+
+  float: left;
+  width: 105%;
+  padding: 50px;
+  border-radius: 20px
+  
+
+ }
+
+.inputAddFod {
+
+  
+  
+  box-sizing: border-box;
+  font-size: px;
+  padding-left: 30px;
+    /* border-bottom:20px solid #e0d2d2;  */
+  margin-top: px;
+
+} 
+
+.butAddFod {
+
+  width: 85x;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 3px;
+  height: 33px;
+  margin: 5px;
+  justify-content: center ;
+
+}
+
+.butSearch {
+
+  width: 85x;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 7px;
+  height: 34px;
+  margin: 5px;
+  justify-content: center ;
+  float: right;
+  
+
+}
+
+.inputSearch {
+
+  box-sizing: border-box;
+  font-size: px;
+  padding-left: 30px;
+    /* border-bottom:20px solid #e0d2d2;  */
+  margin-top: 9px;
+  float: right;
+  
+}
+
+
+.imgDiet{
+
+  display: flex;
+  
+  
+}
+
+
+.title{
+
+  color: #383b3f;
+  text-align: center;
+  padding: 30px;
+  /* font-family: 'Franklin Gothic Medium','Arial Narrow', Arial, sans-serif; */
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 35px;
+  font-weight: bold;
+  
+
+}
+
+
+.parag{
+  
+
+  color: #383b3f;
+  text-align: center;
+  background-color: #7a712e;
+  font-size: large;
+  max-width: 1000px;
+  height: 70;
+  margin: auto;
+  border: 3px solid rgba(192, 189, 197, 0.867);
+  padding: 79px;
+   
+}
+
+
+/* .Food{
+  background-color: rgb(175, 175, 150);
+   
+} */
+
+
+.imgFood{
+
+  width: 250px;
+  height: 300px;
+  margin-right: 100px;
+
+}
+
+.h1{
+
+  font-size: 20px;
+  color: #7a712e !important;
+  margin: 10px;
+  text-align: center;
+  
+}
+
+
+.imgFoodDIAB {
+  
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  justify-content: center;
+  padding: 1px;
+  margin: 16px;
+ 
+}
+
+/* .imgVeget {
+
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  justify-content: center;
+  padding: 2px;
+  margin: 23px;
+ 
+
+} */
+
+/* *{
+  padding: 0%;
+  margin: 0%;
+} */
+.img {
+ 
+  display: inline-block;
+  border-radius: 8px;
+  padding: 32px;
+  width: 380px;
+  height: 350px;
+  border-radius: 50px;
+
+}
+
+/* .center{
+
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  justify-content: center;
+  padding: 13px;
+  border-radius: 12px;
+  
+  
+} */

@@ -1,0 +1,163 @@
+
+.card1{
+  width: 40rem;
+  height: 170;
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 10%;
+  overflow: hidden;
+  border: 1px solid rgb(231, 227, 227);
+  font-size: 2rem;
+ 
+  }
+  
+  .col-md-4{
+      /* text-align: center; */
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      justify-content: center;
+      text-align: center;
+      
+  }
+  .card1:hover{
+      box-shadow:5px 10px 20px 1px rgba(0,0,0,0.253) !important;
+  }
+/*     
+  .card1.body{
+      padding: 3rem 0 !important;
+  }
+   */
+  .card1-text{
+      font-size: .9rem;
+      padding: 0.4rem 1.9rem;
+    
+  }
+  .container-fluid.row{
+      padding-top: 6rem;
+   
+  }
+  .overflow{
+      overflow: hidden;
+  }
+  .card1-img-top{
+      transform: scale(1);
+      transition:transform.05s ease;
+  }
+  .card1-img-top:hover{
+      transform: scale(1.2);
+      /* width: 25rem;
+      height: 250px; */
+  }
+  
+  
+  @media screen and (max-width: 670px) {
+      .container-fluid {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      .card1{
+        margin-top: 20%;
+       
+        justify-content: center;
+      }
+      .col-md-4{
+          margin: auto;
+          align-items: center;
+      }
+    }
+    
+     
+  @media screen and (max-width: 768px) {
+      .container-fluid {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      .card1{
+         
+        margin-top: 20%;
+      
+        justify-content: center;
+      }
+      .col-md-4{
+          margin: auto;
+          align-items: center;
+          justify-content: center;
+      }
+    }
+    @media screen and (max-width: 1024px) {
+      .container-fluid {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      .card1{
+         margin-left: 10%;
+        margin-top: 20%;
+        justify-content: center;
+      }
+    }
+
+    @media screen and (max-width: 375px) {
+      .container-fluid {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      .card1{
+         margin-right: 10%;
+        margin-top: 20%;
+        justify-content: center;
+      }
+      .col-md-4{
+          margin: auto;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+      }
+    }
+
+   
+/* .continer {
+    display: inline-block;
+    justify-items: center;
+}
+.dietRapperDiv {
+
+    width: 80%;
+    margin: auto;
+    margin-top: 200px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+  }
+ 
+  
+  .DietChdiv {
+    width: 33%;
+  }
+  
+  .DietImg {
+    width: 90%;
+    height: 250px;
+  }
+  
+  .DietH1 {
+  
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding: 50px;
+  }
+
+  .btnDiet {
+
+    border-radius: 100%;
+    color: black;
+  } */

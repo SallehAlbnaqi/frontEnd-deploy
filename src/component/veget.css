@@ -1,0 +1,34 @@
+.vegetFoood {
+ 
+    padding: 100px;
+    text-align: center;
+}
+
+.imgveget {
+
+
+    text-align: center;
+    padding: 50px;
+    width:400px;
+    height: 400px;
+
+}
+
+
+.NameVeget {
+ 
+    text-align: center;
+    font: large;
+    padding: 29px;
+
+}
+
+
+.discImg {
+
+    font-size: 19px;
+    color: wheat;
+    margin: 20px;
+    padding: 2px;
+    
+}

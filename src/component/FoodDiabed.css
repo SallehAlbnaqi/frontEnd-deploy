@@ -1,0 +1,28 @@
+.FoodDiabed {
+
+    padding: 100px;
+    text-align: center;
+}
+
+.NameDiadbed{
+    text-align: center;
+    font: large;
+    padding: 29px;
+}
+
+.discrFood{
+
+    font-size: 19px;
+    color: wheat;
+    margin: 20px;
+    padding: 2px;
+}
+
+.img{
+
+    text-align: center;
+      padding: 50px;
+      width:400px;
+      height: 400px;
+}
+

@@ -1,0 +1,28 @@
+.vegetRapperDiv {
+
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 200px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+
+  .vegetChdiv {
+    width: 33%;
+  }
+  
+  .vegetH1 {
+
+    font-size: 25px;
+    color: white;
+    text-align: center;
+  }
+
+  /*.btnDiet {
+
+    border-radius: 50%;
+    color: black;
+  } */
+
