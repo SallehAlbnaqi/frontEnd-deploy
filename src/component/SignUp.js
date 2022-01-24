@@ -29,21 +29,21 @@ const addUs = async ()=>{
  }
 
   return <div>
- <div>
+ 
+
+  <div className="InputLog" >
+    
+    <input placeholder="Name" onChange={(e)=>{changName(e)}} />
+    <input placeholder="Email" onChange={(e)=>{changEmail(e)}}/>
+    <input placeholder="Password" onChange={(e)=>{changPass(e)}}/>
+    <div>
 <input class="w3-radio" type="radio" name="gender" value="male" checked/>
 <label class="w3-white">Male</label>
 <input class="w3-radio" type="radio" name="gender" value="female"/>
 <label class="w3-white">Female</label>
 
 </div>
-
-  <div className="InputLog" >
-    
-    <input placeholder="name" onChange={(e)=>{changName(e)}} />
-    <input placeholder="email" onChange={(e)=>{changEmail(e)}}/>
-    <input placeholder="pass" onChange={(e)=>{changPass(e)}}/>
-    
-      <button className="submit" onClick={()=>{addUs()}}>signUp</button>
+      <button className="submit" onClick={()=>{addUs()}}>Sign Up</button>
       </div>
   </div>;
 }

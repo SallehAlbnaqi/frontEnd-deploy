@@ -64,7 +64,7 @@ const deletCommentVeg = async (comment)=>{
     <>
     
     {Veget ? <div className="vegetFoood">
-      <h1 className="NameVeget" style={{ color: "white" }}>
+      <h1 className="NameVeget" style={{ color: "#7a712e" }}>
         {Veget.name}
       </h1>
       <div className="nameVegetFood">
@@ -72,9 +72,9 @@ const deletCommentVeg = async (comment)=>{
         style={{ width: "300px", height: "300px", "border-radius": "8px" }}
         src={Veget.img}
       />
-      <iframe src={Veget.video} className="imgveget" frameborder="0"></iframe>
+      <iframe src={Veget.video} className="col-3" frameborder="0"></iframe>
       </div>
-      <p className="discImg" style={{ color: "white" }}>
+      <p className="discImg" style={{ color: "#7a712e" }}>
         {Veget.description}
       </p>
 
@@ -85,7 +85,7 @@ const deletCommentVeg = async (comment)=>{
       {Veget && Veget.comment.map((element, index)=>{
         return (
           <div>
-              <p style={{ color: "white" }}>
+              <p style={{ color: "#7a712e" }}>
                 {element.userName}
                 <br/>
                 {element.comment}

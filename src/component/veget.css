@@ -1,4 +1,7 @@
-.vegetFoood {
+
+
+
+ .vegetFoood {
  
     padding: 100px;
     text-align: center;
@@ -7,10 +10,13 @@
 .imgveget {
 
 
-    text-align: center;
+    /* text-align: center;
     padding: 50px;
     width:400px;
-    height: 400px;
+    height: 400px; */
+    text-align: center;
+    padding: 50px;
+   
 
 }
 
@@ -26,9 +32,11 @@
 
 .discImg {
 
-    font-size: 19px;
-    color: wheat;
+    font-size:20px;
     margin: 20px;
     padding: 2px;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
     
-}
+} 

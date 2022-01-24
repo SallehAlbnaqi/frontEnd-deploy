@@ -12,10 +12,13 @@
 
 .discrFood{
 
-    font-size: 19px;
-    color: wheat;
+    font-size:20px;
     margin: 20px;
     padding: 2px;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    
 }
 
 .img{

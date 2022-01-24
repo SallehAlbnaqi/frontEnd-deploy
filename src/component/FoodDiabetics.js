@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
+import "./FoodDib.css";
+import Button from 'react-bootstrap/Button'
+
 
 export default function FoodDiabetics({ token, admin }) {
   const [FoodDiab, setFoodDiab] = useState([]);
@@ -56,11 +59,12 @@ export default function FoodDiabetics({ token, admin }) {
       },
       { headers: { authorization: "Bearer " + token } }
     );
+    console.log(response.data,"saaleh")
 
     const copyed = [...FoodDiab];
     copyed.push(response.data);
     setFoodDiab(copyed);
-    console.log(AddDiad);
+    
   };
 
   const delDiad = async (id, index) => {
@@ -114,44 +118,63 @@ export default function FoodDiabetics({ token, admin }) {
           </div>
         : ""}
 
+<h1 style={{"text-align":"center","margin-top":"2%",marginBottom:"7%",color:"#7a712e"}}
+            >Food Diabetics</h1>
+      
+      <div className="container">
+        <div className="row"  >
       {FoodDiab.map((element, index) => {
         return (
-          <div>
-            {/* <img  onClick={() => {
-              GoToFood(element.id);
-            }} src={element.url} />
-            <h1>{element.name}</h1> */}
-            <h1 className="h1" style={{ color: "white" }}>
-              {element.name}
-            </h1>
-            {/* <h2 className='h1' style={{color:"white"}}>{element.description}</h2> */}
-            <img
-              className="imgFoodDIAB"
-              onClick={() => {
-                GoToFood(element._id);
-              }}
-              style={{
-                width: "300px",
-                height: "300px",
-                "border-radius": "8px",
-              }}
-              src={element.img}
-            />
+          
+          
+
+      <div className="col-md-4" >
+      <div className="card1" key={index}>
+      <div className="overflow">
+
+         <img src={element.img}  className="card1-img-top"style={{"width":"40rem",height:"250px"}} 
+          onClick={() => { GoToFood(element._id)}}
+                 src={element.img}
+               />
+              </div>
+<ul className="list-group list-group-flush">
+<li className="list-group-item" style={{fontSize: "21px",fontWeight: "300px", color:"#7a712e"}}
+         >{element.name}</li>
+         </ul>
+
             <br />
+            <hr/>
             {user.admin == true ? (
-              <button
+              <Button variant="outline-secondary"
+
                 onClick={() => {
                   delDiad(element._id, index);
                 }}
               >
                 remove
-              </button>
+              </Button>
             ) : (
               ""
             )}
-          </div>
+            
+            </div>
+            </div>
+            
+            
+            
+         
+         
+        
+          
         );
+        
+        
       })}
+      </div>
+      </div>
+      
     </div>
+    
   );
+  
 }

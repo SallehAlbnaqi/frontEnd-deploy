@@ -61,11 +61,11 @@ const deletCommentFod = async (comment)=>{
         <>
         {FoodDiab  ? 
         <div className='FoodDiabed'>
-        <h1 className='NameDiadbed' style={{color:"white"}}>{FoodDiab.name}</h1>
+        <h1 className='NameDiadbed' style={{ color: "#7a712e" }}>{FoodDiab.name}</h1>
         <h1>{FoodDiab.data}</h1>
         <img  src={FoodDiab.img} style={{width: "300px" , height: "300px" , "border-radius": "8px",}}  />
         <iframe src={FoodDiab.video} className="imgFodDiab" frameborder="0"></iframe>
-        <h1 className='discrFood' style={{color:"white"}}>{FoodDiab.description}</h1>
+        <h1 className='discrFood' style={{ color: "#7a712e" }} >{FoodDiab.description}</h1>
        
         <input onChange={(e) => {inpComent(e)}} placeholder="comment"/>
         <button onClick={() => {postCommen()}}>add comment</button>
@@ -75,7 +75,7 @@ const deletCommentFod = async (comment)=>{
           console.log(element);
           return (
             <div>
-              <p style={{ color: "white" }}>
+              <p style={{ color: "#7a712e" }}>
                 {element.userName}
                 <br/>
                 {element.comment}

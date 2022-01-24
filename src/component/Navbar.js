@@ -81,13 +81,14 @@ export default function Navbar({ token, setToken,admin }) {
       ) : (
         <div>
           <ul>
-            <li className="w3-button w3-right w3-black" id="NavbarTitle">
+            <li className="w3-button w3-right w3-white" id="NavbarTitle">
               {" "}
               <Link to="/login">login</Link>
             </li>
-            <li className="w3-button w3-right w3-black" id="NavbarTitle">
+            <li className="w3-button w3-right w3-white" id="NavbarTitle" style={{color:"white"}}>
+          
               {" "}
-              <Link to="/signUp">signUp</Link>
+              <Link to="/signUp">Sign Up</Link>
             </li>
             {/*1اذا مافيه توكين اظهر له اللوقن والساين اب*/}
           </ul>

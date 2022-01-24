@@ -36,7 +36,7 @@
    li a {
 
     display: block;
-    color: #7a712e			;
+    color: #43433e;
     font-weight: bold;
     padding: 14px 16px;
     text-decoration: none;
@@ -222,7 +222,7 @@
 
   color: #383b3f;
   text-align: center;
-  padding: 30px;
+  padding: 35px;
   /* font-family: 'Franklin Gothic Medium','Arial Narrow', Arial, sans-serif; */
   font-family: "Lucida Console", "Courier New", monospace;
   font-size: 35px;
@@ -235,15 +235,16 @@
 .parag{
   
 
-  color: #383b3f;
+  color: #43433e;
   text-align: center;
-  background-color: #7a712e;
+  background-color: #dad6d1 ;
   font-size: large;
   max-width: 1000px;
   height: 70;
   margin: auto;
   border: 3px solid rgba(192, 189, 197, 0.867);
   padding: 79px;
+  
    
 }
 

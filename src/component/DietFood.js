@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useHistory, useParams } from "react-router-dom";
+
 import "./DietFood.css";
 
 export default function DietFood({ token }) {
@@ -56,6 +57,7 @@ export default function DietFood({ token }) {
       {Diet && (
         
         <>
+        
           <h1 className="NameDiet" style={{ color: "#7a712e" }}>
             {Diet.name}
           </h1>
@@ -66,7 +68,7 @@ export default function DietFood({ token }) {
           />
       <iframe src={Diet.video} className="col-3" frameborder="0"></iframe>
       
-      <h2 className="NameDietFood" style={{ color: "#7a712e" }}>
+      <h2 className="NameDietFood" style={{ color: "#7a712e" }} >
         {Diet.description}
       </h2>
         </>
@@ -82,12 +84,17 @@ export default function DietFood({ token }) {
           console.log(element);
           return (
             <div>
-              <p style={{ color: "white" }}>
+              <p style={{ color: "#7a712e"}}>
                 {element.userName}
                 <br/>
                 {element.comment}
               </p>
-              {element.userId == user._id? <button onClick={()=>{deletComDiet(element.comment)}}>remove</button>:""}
+              {element.userId == user._id? 
+              <button 
+               onClick={()=>{deletComDiet(element.comment)}}
+               >remove
+               </button>
+               :""}
             </div>
           );
         })}

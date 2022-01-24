@@ -12,11 +12,8 @@ import DietFood from "./component/DietFood";
 import VegetFood from "./component/VegetFood";
 import { Route } from "react-router-dom";
 import "./App.css";
-require("dotenv").config();
-
 
 export default function App() {
-  console.log(process.env.REACT_APP_BACKEND_URL);
   const [admin, setadmin] = useState(false);
   const [token, setToken] = useState(() => {
     const save = localStorage.getItem("token");

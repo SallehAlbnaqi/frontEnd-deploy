@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
 import "./VegetarianFoood.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Button from 'react-bootstrap/Button'
 
 export default function VegetarianFoood({ token, admin }) {
   const [Veget, setVeget] = useState([]);
@@ -117,44 +119,55 @@ export default function VegetarianFoood({ token, admin }) {
             </div>
           
         : ""}
-        <div className="vegetRapperDiv">
+        
+          <h1 style={{"text-align":"center","margin-top":"2%",marginBottom:"7%",color:"#7a712e"}}
+            >Vegetarian Food</h1>
+            <div className="container">
+          <div className="row">
       {Veget.map((element, index) => {
+
         return (
-          <div className="vietChdiv">
-           <br/>
-            {/* <h2 className='h1' style={{color:"white"}}>{element.description}</h2> */}
-            <img className="vegetImg"
-              onClick={() => {
-                GoToVegetFood(element._id);
-              }}
-              style={{
-                width: "300px",
-                height: "300px",
-                "border-radius": "8px",
-              }}
-              src={element.img}
-            />
-            <br />
-            <h1 className="vegetH1" style={{ color: "white" }}>
-              {element.name}
-            </h1>
+         
+         
+        
+         
+      <div className="col-md-4" >
+      <div className="card1" key={index}>
+      <div className="overflow">
+
+            <img src={element.img} className="card1-img-top" style={{"width":"30rem",height:"250px"}} 
+             
+             onClick={() => {GoToVegetFood(element._id)}} src={element.img}/>
+  
+      <ul className="list-group list-group-flush">
+      <li className="list-group-item" style={{fontSize: "21px",fontWeight: "300px", color:"#7a712e"}}>{element.name}</li>
+      </ul>     
+      </div>
+      <br/>
+  <hr/>
+      
             {user.admin == true ? (
-              <button
+              <Button variant="outline-secondary"
                 onClick={() => {
                   deleVeget(element._id, index);
                 }}
               >
                 remove
-              </button>
+              </Button>
             ) : (
               ""
             )}
-          </div>
+            </div>
+            </div>
+          
           
         );
       })}
       ;
       </div>
+      </div>
     </div>
+    
+    
   );
 }
