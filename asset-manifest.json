@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/frontEnd-deploy/static/css/main.075c6428.chunk.css",
-    "main.js": "/frontEnd-deploy/static/js/main.f2bc49c3.chunk.js",
-    "main.js.map": "/frontEnd-deploy/static/js/main.f2bc49c3.chunk.js.map",
+    "main.css": "/frontEnd-deploy/static/css/main.79f814f2.chunk.css",
+    "main.js": "/frontEnd-deploy/static/js/main.50f7784b.chunk.js",
+    "main.js.map": "/frontEnd-deploy/static/js/main.50f7784b.chunk.js.map",
     "runtime-main.js": "/frontEnd-deploy/static/js/runtime-main.36f77caa.js",
     "runtime-main.js.map": "/frontEnd-deploy/static/js/runtime-main.36f77caa.js.map",
     "static/css/2.7170ff32.chunk.css": "/frontEnd-deploy/static/css/2.7170ff32.chunk.css",
-    "static/js/2.8a4746b8.chunk.js": "/frontEnd-deploy/static/js/2.8a4746b8.chunk.js",
-    "static/js/2.8a4746b8.chunk.js.map": "/frontEnd-deploy/static/js/2.8a4746b8.chunk.js.map",
+    "static/js/2.cb5e04f9.chunk.js": "/frontEnd-deploy/static/js/2.cb5e04f9.chunk.js",
+    "static/js/2.cb5e04f9.chunk.js.map": "/frontEnd-deploy/static/js/2.cb5e04f9.chunk.js.map",
     "index.html": "/frontEnd-deploy/index.html",
     "static/css/2.7170ff32.chunk.css.map": "/frontEnd-deploy/static/css/2.7170ff32.chunk.css.map",
-    "static/css/main.075c6428.chunk.css.map": "/frontEnd-deploy/static/css/main.075c6428.chunk.css.map",
-    "static/js/2.8a4746b8.chunk.js.LICENSE.txt": "/frontEnd-deploy/static/js/2.8a4746b8.chunk.js.LICENSE.txt"
+    "static/css/main.79f814f2.chunk.css.map": "/frontEnd-deploy/static/css/main.79f814f2.chunk.css.map",
+    "static/js/2.cb5e04f9.chunk.js.LICENSE.txt": "/frontEnd-deploy/static/js/2.cb5e04f9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.36f77caa.js",
     "static/css/2.7170ff32.chunk.css",
-    "static/js/2.8a4746b8.chunk.js",
-    "static/css/main.075c6428.chunk.css",
-    "static/js/main.f2bc49c3.chunk.js"
+    "static/js/2.cb5e04f9.chunk.js",
+    "static/css/main.79f814f2.chunk.css",
+    "static/js/main.50f7784b.chunk.js"
   ]
 }
